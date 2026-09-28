@@ -1,0 +1,166 @@
+{
+  "experiment_timestamp": "2026-09-28T19:45:55.819591",
+  "random_state": 42,
+  "dataset": "UCI Default of Credit Card Clients (ID 350)",
+  "train_samples": 24000,
+  "test_samples": 6000,
+  "selected_model": "Random Forest",
+  "selection_justification": "Based on the evaluation protocol used in this experiment, Random Forest was selected as the final demonstration model because it achieved the highest ROC-AUC (0.78+) and Average Precision (0.55+), demonstrating superior discrimination between defaulting and non-defaulting borrowers under class imbalance.",
+  "models": {
+    "Dummy Baseline": {
+      "Model": "Dummy Baseline",
+      "Accuracy": 0.7788333333333334,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0,
+      "ROC-AUC": 0.5,
+      "Average Precision": 0.22116666666666668,
+      "CV ROC-AUC Mean": 0.5,
+      "CV ROC-AUC Std": 0.0,
+      "CV F1 Mean": 0.0,
+      "CV F1 Std": 0.0
+    },
+    "Logistic Regression": {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8081666666666667,
+      "Precision": 0.6442622950819672,
+      "Recall": 0.2961567445365486,
+      "F1-Score": 0.40578213732576146,
+      "ROC-AUC": 0.7446605594420707,
+      "Average Precision": 0.5041810725651323,
+      "CV ROC-AUC Mean": 0.7588,
+      "CV ROC-AUC Std": 0.0076,
+      "CV F1 Mean": 0.4083,
+      "CV F1 Std": 0.0141
+    },
+    "Decision Tree": {
+      "Model": "Decision Tree",
+      "Accuracy": 0.8161666666666667,
+      "Precision": 0.6681681681681682,
+      "Recall": 0.33534287867370005,
+      "F1-Score": 0.44656297039638737,
+      "ROC-AUC": 0.7606846462490109,
+      "Average Precision": 0.5123992008556019,
+      "CV ROC-AUC Mean": 0.7652,
+      "CV ROC-AUC Std": 0.0035,
+      "CV F1 Mean": 0.4639,
+      "CV F1 Std": 0.0101
+    },
+    "Random Forest": {
+      "Model": "Random Forest",
+      "Accuracy": 0.8166666666666667,
+      "Precision": 0.6574202496532594,
+      "Recall": 0.3571966842501884,
+      "F1-Score": 0.462890625,
+      "ROC-AUC": 0.7781917026913576,
+      "Average Precision": 0.5579383812592125,
+      "CV ROC-AUC Mean": 0.784,
+      "CV ROC-AUC Std": 0.0038,
+      "CV F1 Mean": 0.4802,
+      "CV F1 Std": 0.005
+    }
+  },
+  "threshold_analysis": [
+    {
+      "Threshold": 0.3,
+      "Precision": 0.5319,
+      "Recall": 0.5531,
+      "F1-Score": 0.5423
+    },
+    {
+      "Threshold": 0.4,
+      "Precision": 0.6014,
+      "Recall": 0.4491,
+      "F1-Score": 0.5142
+    },
+    {
+      "Threshold": 0.5,
+      "Precision": 0.6574,
+      "Recall": 0.3572,
+      "F1-Score": 0.4629
+    },
+    {
+      "Threshold": 0.6,
+      "Precision": 0.7076,
+      "Recall": 0.2735,
+      "F1-Score": 0.3946
+    },
+    {
+      "Threshold": 0.7,
+      "Precision": 0.8057,
+      "Recall": 0.1281,
+      "F1-Score": 0.2211
+    }
+  ],
+  "overfitting_analysis": [
+    {
+      "Model": "Logistic Regression",
+      "Train Accuracy": 0.8099,
+      "Train ROC-AUC": 0.7616,
+      "Test Accuracy": 0.8082,
+      "Test ROC-AUC": 0.7447,
+      "Test F1": 0.4058,
+      "ROC Generalization Gap": 0.0169
+    },
+    {
+      "Model": "Decision Tree",
+      "Train Accuracy": 0.8243,
+      "Train ROC-AUC": 0.7783,
+      "Test Accuracy": 0.8162,
+      "Test ROC-AUC": 0.7607,
+      "Test F1": 0.4466,
+      "ROC Generalization Gap": 0.0177
+    },
+    {
+      "Model": "Random Forest",
+      "Train Accuracy": 0.8405,
+      "Train ROC-AUC": 0.8537,
+      "Test Accuracy": 0.8167,
+      "Test ROC-AUC": 0.7782,
+      "Test F1": 0.4629,
+      "ROC Generalization Gap": 0.0755
+    }
+  ],
+  "top_features": [
+    {
+      "Feature": "PAY_0",
+      "Importance": 0.17552435680305464
+    },
+    {
+      "Feature": "num_delayed_months",
+      "Importance": 0.12835426334284025
+    },
+    {
+      "Feature": "max_delay_category",
+      "Importance": 0.1086461228246679
+    },
+    {
+      "Feature": "PAY_2",
+      "Importance": 0.06050923537546571
+    },
+    {
+      "Feature": "PAY_3",
+      "Importance": 0.049487353807060847
+    },
+    {
+      "Feature": "PAY_5",
+      "Importance": 0.032922017201526085
+    },
+    {
+      "Feature": "utilization_ratio",
+      "Importance": 0.030671740931048817
+    },
+    {
+      "Feature": "payment_coverage_ratio",
+      "Importance": 0.028724425353610257
+    },
+    {
+      "Feature": "LIMIT_BAL",
+      "Importance": 0.02812829945565511
+    },
+    {
+      "Feature": "avg_pay_amt",
+      "Importance": 0.02757889598780161
+    }
+  ]
+}

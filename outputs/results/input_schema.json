@@ -1,0 +1,164 @@
+{
+  "feature_names": [
+    "LIMIT_BAL",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6"
+  ],
+  "feature_types": {
+    "LIMIT_BAL": "int64",
+    "SEX": "int64",
+    "EDUCATION": "int64",
+    "MARRIAGE": "int64",
+    "AGE": "int64",
+    "PAY_0": "int64",
+    "PAY_2": "int64",
+    "PAY_3": "int64",
+    "PAY_4": "int64",
+    "PAY_5": "int64",
+    "PAY_6": "int64",
+    "BILL_AMT1": "int64",
+    "BILL_AMT2": "int64",
+    "BILL_AMT3": "int64",
+    "BILL_AMT4": "int64",
+    "BILL_AMT5": "int64",
+    "BILL_AMT6": "int64",
+    "PAY_AMT1": "int64",
+    "PAY_AMT2": "int64",
+    "PAY_AMT3": "int64",
+    "PAY_AMT4": "int64",
+    "PAY_AMT5": "int64",
+    "PAY_AMT6": "int64"
+  },
+  "numerical_features": [
+    "LIMIT_BAL",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6"
+  ],
+  "categorical_features": [
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE"
+  ],
+  "ranges": {
+    "LIMIT_BAL": {
+      "min": 10000,
+      "max": 1000000,
+      "default": 140000
+    },
+    "AGE": {
+      "min": 21,
+      "max": 79,
+      "default": 35
+    },
+    "SEX": {
+      "allowed_values": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "default": 2
+    },
+    "EDUCATION": {
+      "allowed_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": {
+        "1": "Graduate School",
+        "2": "University",
+        "3": "High School",
+        "4": "Others"
+      },
+      "default": 2
+    },
+    "MARRIAGE": {
+      "allowed_values": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Married",
+        "2": "Single",
+        "3": "Others"
+      },
+      "default": 2
+    },
+    "PAY_0": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    },
+    "PAY_2": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    },
+    "PAY_3": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    },
+    "PAY_4": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    },
+    "PAY_5": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    },
+    "PAY_6": {
+      "min": -2,
+      "max": 8,
+      "default": 0
+    }
+  },
+  "target_mapping": {
+    "0": "No Default",
+    "1": "Default"
+  }
+}

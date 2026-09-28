@@ -1,0 +1,8 @@
+{
+  "sample_index": 6907,
+  "actual_ground_truth": 0,
+  "actual_label": "No Default",
+  "predicted_class": 0,
+  "predicted_label": "No Default",
+  "predicted_probability": 10.31
+}
